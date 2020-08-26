@@ -96,7 +96,3 @@ class MariadbConnectorConan(ConanFile):
             self.cpp_info.libs = ["libmariadb", "mariadbclient"]
         else:
             self.cpp_info.libs = ["mariadb", "mariadbclient"]
-
-        bin_path = os.path.join(self.package_folder, 'bin')
-        self.output.info('Appending PATH environment variable: %s' % bin_path)
-        self.env_info.PATH.append(bin_path)
