@@ -41,11 +41,11 @@ class MariadbConnectorConan(ConanFile):
 
     def requirements(self):
         if self.options.with_ssl:
-            self.requires("openssl/1.1.1g")
+            self.requires("openssl/1.1.1h")
         if self.options.with_external_zlib:
             self.requires("zlib/1.2.11")
         if self.options.with_curl:
-            self.requires("libcurl/7.70.0")
+            self.requires("libcurl/7.73.0")
 
     def build(self):
         cmake = CMake(self)
