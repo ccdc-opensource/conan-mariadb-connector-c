@@ -6,5 +6,5 @@ sources:
     sha256: b7f386faafff7ed4bf1a66e6f5b179db74e3a2a0a937a26c9e4203600ce075bc
     url: https://downloads.mariadb.org/f/connector-c-3.1.10/mariadb-connector-c-3.1.10-src.zip
   3.1.11:
-    sha256: "3e6f6c399493fe90efdc21a3fe70c30434b7480e8195642a959f1dd7a0fa5b0f"
+    sha256: 97a974bdbb8b0c57d49dcbc2393b1ab821ae979430d2be7bef23e7a0027210c8
     url: https://downloads.mariadb.org/f/connector-c-3.1.11/mariadb-connector-c-3.1.11-src.zip
