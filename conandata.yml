@@ -7,4 +7,4 @@ sources:
     url: https://downloads.mariadb.org/f/connector-c-3.1.10/mariadb-connector-c-3.1.10-src.zip
   3.1.11:
     sha256: "3e6f6c399493fe90efdc21a3fe70c30434b7480e8195642a959f1dd7a0fa5b0f"
-    url: https://downloads.mariadb.org/f/connector-c-3.1.10/mariadb-connector-c-3.1.11-src.zip
+    url: https://downloads.mariadb.org/f/connector-c-3.1.11/mariadb-connector-c-3.1.11-src.zip
