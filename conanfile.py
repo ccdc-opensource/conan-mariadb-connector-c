@@ -80,6 +80,9 @@ class MariadbConnectorcConan(ConanFile):
             "SET(SSL_LIBRARIES ${OPENSSL_SSL_LIBRARY} ${OPENSSL_CRYPTO_LIBRARY})",
             "SET(SSL_LIBRARIES ${OPENSSL_LIBRARIES})"
         )
+        tools.replace_in_file(f"{self.source_subfolder}/cmake/ConnectorName.cmake",
+                              "  END()",
+                              "  ENDIF()")
 
     def _configure_cmake(self):
         if self._cmake:
