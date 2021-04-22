@@ -34,6 +34,9 @@ class MariadbConnectorConan(ConanFile):
                               '''PROJECT(mariadb-connector-c C)
  include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
  conan_basic_setup()''')
+        tools.replace_in_file(f"{self.source_subfolder}/cmake/ConnectorName.cmake",
+                              "  END()",
+                              "  ENDIF()")
 
     def config_options(self):
         if self.settings.os == "Windows":
