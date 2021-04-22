@@ -1,19 +1,15 @@
 from conans import ConanFile, CMake, tools
 import os
 
-class MariadbconnectorTestConan(ConanFile):
-    settings = "os", "compiler", "build_type", "arch"
+
+class TestPackageConan(ConanFile):
+    settings = "os", "arch", "compiler", "build_type"
     generators = "cmake"
 
     def build(self):
         cmake = CMake(self)
         cmake.configure()
         cmake.build()
-
-    def imports(self):
-        self.copy("*.dll", dst="bin", src="bin")
-        self.copy("*.dylib*", dst="lib", src="lib")
-        self.copy('*.so*', dst='lib', src='lib')
 
     def test(self):
         if not tools.cross_building(self.settings):
