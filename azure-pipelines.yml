@@ -1,14 +1,15 @@
 resources:
   repositories:
     - repository: templates
-      type: git
-      name: ccdc-3rd-party/conan-azure-devops
+      type: github
+      endpoint: github
+      name: ccdc-opensource/conan-azure-devops
       ref: refs/heads/development
 
 extends:
   template: third-party-library-all-platforms-from-conan-center.yml@templates
   parameters:
     package: mariadb-connector-c
-    package_version: 3.1.11
+    package_version: 3.1.19
     source_repository: public-conan-center
     destination_repository: ccdc-3rdparty-conan
